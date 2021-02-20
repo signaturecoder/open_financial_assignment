@@ -1,0 +1,27 @@
+<div class="calculator__container">
+  <mat-slider
+  thumbLabel
+  [displayWith]="formatLabel"
+  tickInterval="1000"
+  min="1"
+  max="100000"></mat-slider>
+  <mat-slider
+  thumbLabel
+  [displayWith]="formatLabel"
+  tickInterval="1000"
+  min="1"
+  max="100000"></mat-slider>
+  <mat-form-field appearance="fill">
+    <mat-label>Favorite food</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{food.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  Do you have any existing loans?<mat-slide-toggle>Slide me!</mat-slide-toggle>
+  <mat-form-field appearance="fill">
+    <mat-label>EMI of existing loan (optional)</mat-label>
+    <input matInput>
+  </mat-form-field>
+</div>
