@@ -1,1 +1,12 @@
-<p>card works!</p>
+
+<mat-card class="card">
+  <mat-card-header>
+    <img mat-card-avatar src="{{cardDetail.avatarUrl}}" alt="iamges">
+  </mat-card-header>
+  <h3>{{ cardDetail.title}}</h3>
+  <mat-card-content>
+    <p class="description">
+     {{ cardDetail.description}}
+    </p>
+  </mat-card-content>
+</mat-card>

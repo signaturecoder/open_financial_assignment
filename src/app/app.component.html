@@ -1,4 +1,5 @@
 <div class="landing__container">
+  <div class="top__wrapper">
   <app-header></app-header>
   <img  class="top__left__circle" src="/assets/images/blob-small.svg" alt="top_left_circle">
   <img  class="left__text" src="/assets/images/We make it Super Sim.svg" alt="text__image">
@@ -7,5 +8,12 @@
   <img  class="left__accounting__dots" src="/assets/images/accounting_dots.svg" alt="accounting__dots">
   <img  class="top__right__circle" src="/assets/images/circle.svg" alt="top_right_circle">
   <app-eligibility-calculator></app-eligibility-calculator>
+</div>
+<div class="bottom__wrapper">
+  <div class="cards__container" *ngFor="let cardDetail of cardDetails">
+    <app-card [cardDetail]="cardDetail"></app-card>
+
+  </div>
+</div>
 </div>
 <!-- <router-outlet></router-outlet> -->
