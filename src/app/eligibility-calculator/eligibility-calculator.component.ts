@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EligibilityCalculatorComponent implements OnInit {
 
-  foods: any = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
+  monthlyIncome: any = 0;
+  monthlyExpense: any = 0;
+  repaymentTenure: any = [
+    {value: '6', viewValue: '6 months'},
+    {value: '12', viewValue: '12 months'},
+    {value: '18', viewValue: '18 months'}
   ];
   constructor() { }
 
