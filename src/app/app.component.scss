@@ -4,16 +4,14 @@ $color-white: #fff;
 $zIndex: 10;
 .landing__container {
   position: relative;
+  // width: 100%;
 
   .top__wrapper {
     .top__right__circle {
-      // background: transparent url('/assets/images/circle.svg') 0% 0% no-repeat padding-box;
       top: -150px;
       left: 406px;
-      width: 1010px;
-      height: 1002px;
-      // width: 100%;
-      // height: 100%;
+      width: 936px;
+      height: 925px;
       position: absolute;
     }
     .top__left__circle {
@@ -32,7 +30,6 @@ $zIndex: 10;
       color: #222222;
       z-index: 10;
       font-size: 30px;
-
     }
     .text__bottom--border {
       top: 335px;
@@ -72,28 +69,36 @@ $zIndex: 10;
   }
 
   .bottom__wrapper {
-    background: url("/assets/images/sol_wave_bg.svg") padding-box;
-    width: 1366px;
-    height: 720px;
-    position: absolute;
+    background: url("/assets/images/sol_wave_bg.svg") no-repeat 100% 100%
+      padding-box;
+    width: 100%;
     top: 1000px;
     z-index: 20;
-    // display: flex;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
     .cards__container {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-around;
+      // flex: 1;
+      // display: flex;
+      // flex-wrap: wrap;
+      // flex-direction: column;
+      // justify-content: space-around;
       // align-items: center;
       width: 300px;
       // background-color: darkcyan;
     }
 
     .bottom-right__container {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-start;
       .bottom-right--title {
-       font-family: Montserrat-Medium;
-       font-size: 40px;
-       letter-spacing: 49;
+        font-family: Montserrat-Medium;
+        font-size: 40px;
+        letter-spacing: 49;
       }
       .bottom-right--description {
         font-family: Montserrat-Regular;

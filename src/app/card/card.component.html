@@ -1,12 +1,14 @@
+<div class="cards__container" >
 
-<mat-card class="card">
+<mat-card class="card" *ngFor="let card of cardDetail">
   <mat-card-header>
-    <img mat-card-avatar src="{{cardDetail.avatarUrl}}" alt="iamges">
+    <img mat-card-avatar src="{{card.avatarUrl}}" alt="iamges">
   </mat-card-header>
-  <h3 class="card__title">{{ cardDetail.title}}</h3>
+  <h3 class="card__title">{{ card.title}}</h3>
   <mat-card-content>
     <p class="card__description">
-     {{ cardDetail.description}}
+     {{ card.description}}
     </p>
   </mat-card-content>
 </mat-card>
+</div>
