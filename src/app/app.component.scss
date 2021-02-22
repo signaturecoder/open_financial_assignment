@@ -60,7 +60,7 @@ $zIndex: 10;
     }
 
     .right__accounting__dots {
-      top: 566px;
+      top: 620px;
       left: 983px;
       width: 316px;
       height: 70px;
@@ -69,7 +69,7 @@ $zIndex: 10;
   }
 
   .bottom__wrapper {
-    background: url("/assets/images/sol_wave_bg.svg") no-repeat 100% 100%
+    background: url("/assets/images/sol_wave_bg.svg") no-repeat 100% 0%
       padding-box;
     width: 100%;
     top: 1000px;
@@ -80,14 +80,16 @@ $zIndex: 10;
     align-items: center;
 
     .cards__container {
-      // flex: 1;
-      // display: flex;
-      // flex-wrap: wrap;
-      // flex-direction: column;
-      // justify-content: space-around;
-      // align-items: center;
-      width: 300px;
-      // background-color: darkcyan;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card__container__one {
+        flex: 1;
+      }
+      .card__container__two {
+        flex: 1;
+        align-self: center;
+      }
     }
 
     .bottom-right__container {

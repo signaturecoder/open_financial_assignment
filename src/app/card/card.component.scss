@@ -1,14 +1,14 @@
-.cards__container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  width: 555px;
+// .cards__container {
+  // display: flex;
+  // flex-flow: row wrap;
+  // justify-content: space-around;
+  // width: 555px;
 
 
 .card {
-  width: 327px;
+  width: 300px;
   height: 160px;
-  margin: 10px;
+  margin: 25px;
   box-shadow: 0px 0px 30px #2321321F !important;
   border-radius: 15px;
   .card__description {
@@ -24,4 +24,4 @@
     color: white;
   }
 }
-}
+// }

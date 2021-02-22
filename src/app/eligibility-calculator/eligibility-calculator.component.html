@@ -3,7 +3,7 @@
     <h3>Eligibility Calculator</h3>
     <div>
       <label for="">Monthly Income</label><br>
-      &#8377;{{ monthlyIncome }}
+      &#8377;{{ monthlyIncome }}<br>
       <mat-slider
         thumbLabel
         [displayWith]="formatLabel"
@@ -15,7 +15,7 @@
     </div>
     <div>
       <label for="">Monthly Expense</label><br>
-      &#x20B9;{{ monthlyExpense }}
+      &#x20B9;{{ monthlyExpense }}<br>
       <mat-slider
         thumbLabel
         [displayWith]="formatLabel"
@@ -45,10 +45,10 @@
     </mat-form-field>
   </div>
   <div class="calculator_data">
-    <p>Loan Amount</p>
-    <h3>Rs. 10000</h3>
-    <p>Your EMI will be</p>
-    <h3>Rs. 15000</h3>
+    <label class="calculator__data--label">Loan Amount</label>
+    <p>Rs. 10000</p>
+    <label class="calculator__data--label">Your EMI will be</label>
+    <p>Rs. 15000</p>
     <button class="money-btn" mat-raised-button>Get Money</button>
   </div>
 </div>

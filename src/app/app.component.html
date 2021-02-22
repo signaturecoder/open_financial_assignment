@@ -31,9 +31,10 @@
     />
   </div>
   <div class="bottom__wrapper">
-    <!-- <div class="cards__container" *ngFor="let cardDetail of cardDetails"> -->
-      <app-card [cardDetail]="cardDetails"></app-card>
-    <!-- </div> -->
+    <div class="cards__container" >
+      <app-card class="card__container__one" [cardDetail]="cardDetailsColOne"></app-card>
+      <app-card class="card__container__two" [cardDetail]="cardDetailsColTwo"></app-card>
+    </div>
     <div class="bottom-right__container">
       <p class="bottom-right--title">Boost your business with Open</p>
       <div><img src="/assets/images/Line 3.svg" alt="line 3" /></div>

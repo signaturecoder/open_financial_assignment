@@ -4,14 +4,12 @@ mat-slider {
 }
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 100%;
   position: absolute;
-  right: 250px;
   top: 250px;
-  background-color: rgb(21, 255, 177);
+  right: 100px;
   z-index: 20;
 
   .calculator__form {
@@ -23,16 +21,15 @@ mat-slider {
     box-shadow: 10px 10px 10px #ccc;
     border-radius: 20px;
     height: fit-content;
-    width: 30vw;
     height: 58vh;
-    padding: 2em;
+    padding: 1em;
 
     .repayment {
-      width: 21vw;
+      width: 96%;
     }
 
     .existing__loans {
-      width: 21vw;
+      width: 96%;
       display: flex;
       justify-content: space-between;
     }
@@ -55,6 +52,9 @@ mat-slider {
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    .calculator__data--label {
+      color: #f3f0f0;
+    }
     .money-btn {
       border-radius: 25px;
       color: $color-violet;
