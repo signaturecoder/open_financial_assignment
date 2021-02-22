@@ -2,7 +2,7 @@
   <div class="top__wrapper">
   <app-header></app-header>
   <img  class="top__left__circle" src="/assets/images/blob-small.svg" alt="top_left_circle">
-  <img  class="left__text" src="/assets/images/We make it Super Sim.svg" alt="text__image">
+  <div class="left__text">We make it Super Simple</div>
   <div class="text__bottom--border"></div>
   <img  class="left__handshake" src="/assets/images/handshake.png" alt="top_right_circle">
   <img  class="left__accounting__dots" src="/assets/images/accounting_dots.svg" alt="accounting__dots">
@@ -13,7 +13,12 @@
 <div class="bottom__wrapper">
   <div class="cards__container" *ngFor="let cardDetail of cardDetails">
     <app-card [cardDetail]="cardDetail"></app-card>
-
+  </div>
+  <div class="bottom-right__container">
+    <p class="bottom-right--title">Boost your business with Open</p>
+    <div><img src="/assets/images/Line 3.svg" alt="line 3"></div>
+    <p class="bottom-right--description">Get your hands on a term loan that’s crafted for your business</p>
+    <button class="open__account__btn">Get an Open Account</button>
   </div>
 </div>
 </div>

@@ -6,12 +6,16 @@
   margin: 1.5em;
   box-shadow: 0px 0px 30px #2321321F !important;
   border-radius: 15px;
-  .description {
+  .card__description {
     word-wrap: break-word;
+    color:#999999;
   }
 }
 
 .card:hover {
   background-color: #9F62C9;
   color: white;
+  .card__description {
+    color: white;
+  }
 }
