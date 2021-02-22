@@ -11,9 +11,9 @@ export class EligibilityCalculatorComponent implements OnInit {
   monthlyIncome: any = 0;
   monthlyExpense: any = 0;
   repaymentTenure: any = [
-    {value: '6', viewValue: '6 months'},
-    {value: '12', viewValue: '12 months'},
-    {value: '18', viewValue: '18 months'}
+    { value: '6', viewValue: '6 Months' },
+    { value: '12', viewValue: '12 Months' },
+    { value: '18', viewValue: '18 Months' }
   ];
   constructor() { }
 
@@ -26,6 +26,14 @@ export class EligibilityCalculatorComponent implements OnInit {
     }
 
     return value;
+  }
+
+  onIncomeInputChange(event: any) {
+    this.monthlyIncome = event.value;
+  }
+
+  onExpenseInputChange(event: any) {
+    this.monthlyExpense = event.value;
   }
 
 }

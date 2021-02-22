@@ -7,9 +7,10 @@
       <mat-slider
         thumbLabel
         [displayWith]="formatLabel"
+        (input)="onIncomeInputChange($event)"
         tickInterval="1000"
-        min="1"
-        max="100000"
+        min="100000"
+        max="300000"
       ></mat-slider>
     </div>
     <div>
@@ -18,12 +19,13 @@
       <mat-slider
         thumbLabel
         [displayWith]="formatLabel"
+        (input)="onExpenseInputChange($event)"
         tickInterval="1000"
         min="1"
         max="100000"
       ></mat-slider>
     </div>
-    <mat-form-field >
+    <mat-form-field class="repayment">
       <mat-label>Repayment Tenure</mat-label>
       <mat-select>
         <mat-option *ngFor="let tenure of repaymentTenure" [value]="tenure.value">
@@ -31,13 +33,13 @@
         </mat-option>
       </mat-select>
     </mat-form-field>
-    <div>
+    <div class="existing__loans">
       <span>Do you have any existing loans?</span>
       <mat-slide-toggle
         ></mat-slide-toggle
       >
     </div>
-    <mat-form-field >
+    <mat-form-field class="emi">
       <mat-label>EMI of existing loan (optional)</mat-label>
       <input matInput />
     </mat-form-field>
