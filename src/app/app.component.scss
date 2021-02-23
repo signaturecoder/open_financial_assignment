@@ -115,6 +115,10 @@ $zIndex: 10;
         color: $color-violet;
         border-radius: 24px;
       }
+      .open__account__btn:hover {
+        background-color: $color-violet;
+        color: white;
+      }
     }
   }
 }
